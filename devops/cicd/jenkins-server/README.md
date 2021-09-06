@@ -12,13 +12,13 @@ You can access this Jenkins Server (after Docker container running) at http://lo
 5. [Jenkins Server Docker Container](#jenkins-server-docker-container)
 
 
-## Jenkins Plugins Installation <a name="jenkins-plugins-installation"></a>
+## 1. Jenkins Plugins Installation <a name="jenkins-plugins-installation"></a>
 
 - In this codebase, you find plugins.txt. This text file contains all the additional plugins you like to automatically installed when the Docker based Jenkins Server is "up & running" for the first time
 
 - In Dockerfile, you find above plugins.txt file is read and Jenkins Install Plugins command line tool is executed during this codegase Jenkins's Docker container image creation
 
-## Jenkins Docker Image Creation <a name="jenkins-docker-image-creation"></a>
+## 2, Jenkins Docker Image Creation <a name="jenkins-docker-image-creation"></a>
 
 Execute below commands to create the Jenkins Docker image with this codebase additional Jenkins configuration and default Jenkins Seed Project creation.
 
@@ -57,17 +57,19 @@ Figure for Jenkins Docker Container home page when accessed in browser http://lo
 ![This codebase Jenkins Home page first time](../../../docs/assets/images/Jenkins_HomePage_FirstTime.png)
 
 
-## Seed Job Jenkins Project
+## 3. Seed Job Jenkins Project
 
-- In this codebase, you find seedJob.xml. This is an XML configuration for a default Jenkins Project, with name "seed-job"
+- In this codebase, you find seedJob.xml. This is "seed-job" Jenkins project's XML configuration, in Jenkins XML syntax. This "seed-job" is a default Jenkins Project that is available when you run the Jenkins server using the shell scripts of this codebase.
 
 - In Dockerfile, you find above seedJob.xml is copied as seed-job/config.xml inside Jenkins installation
 
-- When you run Docker container and access Jenkins server at http://localhost:8080, you will find seed-job Jenkins project already created
+- When you run Docker container and access Jenkins server at http://localhost:8080, you will find "seed-job" Jenkins project already created
 
-- This seed project responsibility is to create a Jenkins project for this CreditRiskApp codebase. This is achieved through a Jenkins way of XML configuration and this config points to this Github codebase repository URL. 
+- This "seed-job" project responsibility is, when you click on "Build Now" Jenkins button/icon in this Jenkins runtime, it builds i.e. creates another Jenkins projects by reading the configuration in the createJobs.groovy of this codebase. 
 
-- Through the above approach, we can automatically setup all the Jenkins project stages for this codebase.
+- Alternative explanation for the aboint point is, using Jenkins runtime tools, that are configured in "seed-job" project, we are creating another Jenkins projects that configured CI/CD pipelines for CreditRiskApp Maven projects. 
+
+- Through the above approach, we can automatically setup all the Jenkins project stages for this CreditRiskApp codebase.
 
 ## About pipelineJob.groovy
 
