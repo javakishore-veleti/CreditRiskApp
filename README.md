@@ -31,8 +31,28 @@ Following tools and versions are used to create and maintain this codebase:
 ## Maven Projects creation
 - Created Eclipse Working Set for each of the Microservice
 - Using Eclipse -> New Project -> Maven -> maven-archetype-quickstart, created all MicroServices Java projects
-- mvnw 
 ![This codebase Maven workingsets](./docs/assets/images/eclipse_working_sets_maven_projects.png)
+
+## Maven Wrapper (mvnw) commands
+Below mvnw (Maven Wrapper) commands are executed only after the above MicroServices Maven projects created.
+
+
+```sh
+
+	cd CreditRiskApp
+	mvn -N io.takari:maven:wrapper
+
+
+	cd CreditRiskApp/microservices/creditrisk-modeling-service
+	mvn -N io.takari:maven:wrapper	
+
+	cd CreditRiskApp/microservices/creditrisk-advisory-service
+	mvn -N io.takari:maven:wrapper	
+
+	cd CreditRiskApp/microservices/creditrisk-creditresearch-service
+	mvn -N io.takari:maven:wrapper	
+
+```
 
 
 # Jenkins Server Docker Container codebase
