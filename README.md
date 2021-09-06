@@ -1,5 +1,7 @@
 # Credit Risk Application
-The purpose of this project is to adapt MicroServices to Credit Risk domain with primary focuson 
+The purpose of this project is to adapt MicroServices to Credit Risk domain. This is a simple application with each Microservice exposing REST API end points that returns various products related to Credit Risk solutions.
+
+But the with primary focus of this project is more on technology than on Credit Risk domain. So, the technology focused aspects in this codebase are:
 - MicroServices design patterns
 - Java 8 Streams / Functional Programming
 - Kafka streaming architecture
