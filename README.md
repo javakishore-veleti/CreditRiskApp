@@ -27,18 +27,21 @@ This codebase have following Microservices
 ## Tools Versions <a name="tools-versions"></a>
 Following tools and versions are used to create and maintain this codebase:
 
-| Tool Name        	| Version           | Commands           	| Additional Notes   							|
-| ---------------- 	|-------------------| ----------------------|-----------------------------------------------|
-| Java JDK     	   	| 11                | 						|  					 							|
-| Apache Maven     	| 3.8.1             | 						|  https://www.baeldung.com/maven-wrapper		|
-| mvnw Maven Wrapper|               	|  						|												|
-| Eclipse IDE      	| 2021-06 (4.20.0)  | 						|  					 							|
-| Jenkins Server   	| 2.249.1  		   	| 						|  					 							|
-| Docker   		   	| 	     		   	| 						|  					 							|
+| Tool Name        		| Version           | Commands           	| Additional Notes   							|
+| ---------------- 		|-------------------| ----------------------|-----------------------------------------------|
+| Java JDK     	   		| 11                | 						|  					 							|
+| Apache Maven     		| 3.8.1             | 						|  https://www.baeldung.com/maven-wrapper		|
+| mvnw Maven Wrapper 	|               	|  						|												|
+| Eclipse IDE      		| 2021-06 (4.20.0)  | 						|  					 							|
+| Jenkins Server   		| 2.249.1  		   	| 						|  					 							|
+| Docker   		   		| 	     		   	| 						|  					 							|
+| Spring Boot   		| 2.5.4	     		| 						|  					 							|
+| H2 Database Server 	| 1.4.200	     	| 						|  					 							|
 
 ## Maven Projects creation <a name="maven-projects-creation"></a>
 - Created Eclipse Working Set for each of the Microservice
 - Using Eclipse -> New Project -> Maven -> maven-archetype-quickstart, created all MicroServices Java projects
+- After creating Maven projects, for each Microservice src/main/resources/application.properties files are created manually
 
 #### Maven Wrapper (mvnw) commands
 Below mvnw (Maven Wrapper) commands are executed only after the above MicroServices Maven projects created.
@@ -65,3 +68,10 @@ Below mvnw (Maven Wrapper) commands are executed only after the above MicroServi
 
 
 # Jenkins Server Docker Container codebase
+In this codebase, a Docker container based Jenkins server is used.
+
+## Automatic CreditRiskApp Jenkins Project setup
+- Once Docker container based Jenkins server bash/shell scripts (in subfolders of this codebase) are executed, then you can accesss Jenkins server at http://localhost:8080
+
+
+
