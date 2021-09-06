@@ -40,6 +40,9 @@ Following are the bash scripts you will find in this codebase to build/start/sto
 #### Figure for Jenkins "seed job" project "Build Now" successful, 2 new Jenkins projects created
 ![Seed Job Build Now](../../../docs/assets/images/Jenkins-seedjob-buildnow-successful-2-new-projects-1.png)
 
+#### Figure for Jenkins "Credit Risk App" project "Build Now" successful, and its stages
+![CreditRiskApp Build Now](../../../docs/assets/images/Jenkins-CreditRiskApp-CICD-Project-BuildNow.png)
+
 
 ## 2. Jenkins Plugins Installation <a name="jenkins-plugins-installation"></a>
 
