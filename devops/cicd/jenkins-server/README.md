@@ -10,6 +10,10 @@ You can access this Jenkins Server (after Docker container running) at http://lo
 
 - In Dockerfile, you find above plugins.txt file is read and Jenkins Install Plugins command line tool is executed during this codegase Jenkins's Docker container image creation
 
+
+![This codebase Jenkins Docker Image Creation](./docs/assets/images/jenkins_server_docker_build.png)
+
+
 ## Seed Job Jenkins Project
 
 - In this codebase, you find seedJob.xml. This is an XML configuration for a Jenkins Project, with name "seed-job"
