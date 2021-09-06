@@ -1,7 +1,15 @@
 # Credit Risk Application
 The purpose of this project is to adapt MicroServices to Credit Risk domain. This is a simple application with each Microservice exposing REST API end points that returns various products related to Credit Risk solutions.
 
-But the with primary focus of this project is more on technology than on Credit Risk domain. So, the technology focused aspects in this codebase are:
+# Table of contents
+1. [Project Primary Focus](#project-primary-focus)
+2. [Multiple MicroServices Projects setup](#multiple-microservices-projects-setup)
+3. [Tools Versions](#tools-versions)
+4. [Maven Projects creation](#maven-projects-creation)
+
+
+# Project Primary Focus <a name="project-primary-focus"></a>
+The primary focus of this project is more on technology than on Credit Risk domain. So, the technology focused aspects in this codebase are:
 - MicroServices design patterns
 - Java 8 Streams / Functional Programming
 - Kafka streaming architecture
@@ -9,11 +17,6 @@ But the with primary focus of this project is more on technology than on Credit 
 - Serverless technologies, Functions As a Service
 - Cloud services like AWS, GCP, Azure and more.
 - Angular, React, JWT
-
-# Table of contents
-1. [Multiple MicroServices Projects setup](#multiple-microservices-projects-setup)
-2. [Tools Versions](#tools-versions)
-3. [Maven Projects creation](#maven-projects-creation)
 
 # Multiple MicroServices Projects setup <a name="multiple-microservices-projects-setup"></a>
 This codebase have following Microservices
