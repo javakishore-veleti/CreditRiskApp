@@ -25,6 +25,19 @@ Following are the bash scripts you will find in this codebase to build/start/sto
 - ./jenkins_stop_docker.sh - stops the already running Docker container with Jenins server
 - ./jenkins_remove_docker.sh - removes the created Docker container with Jenins server and its Docker image
 
+Figure for Jenkins Docker Image build creation.
+![This codebase Jenkins Docker Image Creation](../../../docs/assets/images/jenkins_server_docker_build.png)
+
+Figure for Jenkins Docker Container running first time. Watch message "hudson.WebAppMain$3#run: Jenkins is fully up and running".
+![This codebase Jenkins Up and Running](../../../docs/assets/images/Jenkins_Up_Running.png)
+
+Figure for Jenkins Docker Container home page when accessed in browser http://localhost:8080
+![This codebase Jenkins Home page first time](../../../docs/assets/images/Jenkins_HomePage_FirstTime.png)
+
+Figure for Jenkins "seed job" project and its "Build Now" icon
+![Jenkins Seed Job project](../../../docs/assets/images/Jenkins-seed-job-jenkins-project-build-now-button.png)
+
+
 ## 2. Jenkins Plugins Installation <a name="jenkins-plugins-installation"></a>
 
 - In this codebase, you find plugins.txt. This text file contains all the additional plugins you like to automatically installed when the Docker based Jenkins Server is "up & running" for the first time
@@ -59,19 +72,6 @@ cd devops/cicd/jenkins-server
 ./jenkins_remove_docker.sh
 
 ```
-
-Figure for Jenkins Docker Image build creation.
-![This codebase Jenkins Docker Image Creation](../../../docs/assets/images/jenkins_server_docker_build.png)
-
-Figure for Jenkins Docker Container running first time. Watch message "hudson.WebAppMain$3#run: Jenkins is fully up and running".
-![This codebase Jenkins Up and Running](../../../docs/assets/images/Jenkins_Up_Running.png)
-
-Figure for Jenkins Docker Container home page when accessed in browser http://localhost:8080
-![This codebase Jenkins Home page first time](../../../docs/assets/images/Jenkins_HomePage_FirstTime.png)
-
-Figure for Jenkins "seed job" project and its "Build Now" icon
-![Jenkins Seed Job project](../../../docs/assets/images/Jenkins-seed-job-jenkins-project-build-now-button.png)
-
 
 ## 4. Seed Job Jenkins Project
 
