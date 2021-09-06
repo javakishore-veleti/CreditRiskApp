@@ -6,7 +6,12 @@ The purpose of this project is to adapt MicroServices to Credit Risk domain with
 - CI/CD DevOps practices like Jenkins, Azure DevOps, Kubernetes
 - Serverless technologies, Functions As a Service
 - Cloud services like AWS, GCP, Azure and more.
+- Angular, React, JWT
 
-# Multiple MicroServices Projects setup using Java, Spring Boot, more
+# Multiple MicroServices Projects setup
+This codebase have following Microservices
+- creditrisk-advisory-service
+- creditrisk-creditsearch-service
+- creditrisk-modeling-service
 
 # Jenkins Server Docker Container codebase
