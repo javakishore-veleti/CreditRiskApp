@@ -38,6 +38,8 @@ cd devops/cicd/jenkins-server
 
 ![This codebase Jenkins Up and Running](../../../docs/assets/images/Jenkins_Up_Running.png)
 
+![This codebase Jenkins Home page first time](../../../docs/assets/images/Jenkins_HomePage_FirstTime.png)
+
 
 ## Seed Job Jenkins Project
 
