@@ -4,6 +4,8 @@ A Docker container based Jenkins Server with pre-configured "SeedJob" Jenkins pr
 
 You can access this Jenkins Server (after Docker container running) at http://localhost:8080
 
+In summary, after following below mentioned steps, you will have a CI/CD pipeline Jenkins project being created automatically. This Jenkins project uses this codebase GitHub URL as SCM URL and builds the CI/CD stages for this codebase.
+
 # Table of contents
 1. [Jenkins Plugins Installation](#jenkins-plugins-installation)
 2. [Jenkins Docker Image Creation](#jenkins-docker-image-creation)
@@ -71,7 +73,17 @@ Figure for Jenkins Docker Container home page when accessed in browser http://lo
 
 - Through the above approach, we can automatically setup all the Jenkins project stages for this CreditRiskApp codebase.
 
-## About pipelineJob.groovy
 
+## 4. About createJobs.groovy
 
-## About createJobs.groovy
+- In seedJob.xml you can find "hudson.plugins.git.GitSCM" configured to this codebase Github URL.
+
+- Purpose for the above GitSCM is to checkout this Github codebase and run the CI/CD pipeline commands based on the "Jenkinsfile" that is available at the root of this codebase.
+
+- This createJobs.groovy is invoked by the above GitSCM project's "builders" configuration.
+
+- Read the "seedJob.xml" file for more understanding of what will happen when you click on the "Build Now" button in the Jenkins server UI of this codebase.
+
+- After successful execution of "Build Now" button in the "seed job" Jenkins project UI, you will find additional two more Jenkins projects being created automatically.
+
+- One of the above automatically created Jenkins projects is CI/CD pipeline for this CreditRiskApp codebase.
