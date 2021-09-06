@@ -16,4 +16,14 @@ This codebase have following Microservices
 - creditrisk-creditsearch-service
 - creditrisk-modeling-service
 
+## Tools Versions
+Following tools and versions are used to create and maintain this codebase:
+
+| Tool Name        | Version           | Commands           | Additional Notes   |
+| ---------------- |-------------------| -------------------|------------------- |
+| Java JDK     	   | 1.11              | 					|  					 |
+| Apache Maven     | 3.8.1             | 					|  					 |
+
+## Maven Proje
+
 # Jenkins Server Docker Container codebase
