@@ -14,13 +14,23 @@ You can access this Jenkins Server (after Docker container running) at http://lo
 4. [Maven Projects creation](#maven-projects-creation)
 
 
+## 1. Jenkins Docker Container build/start/stop/restart/remove scripts
+
+Following are the bash scripts you will find in this codebase to build/start/stop/restart/remove the Docker container based Jenkins server
+
+- ./jenkins_build_docker.sh - creates the Docker image for this codebase Jenkins server
+- ./jenkins_start_docker.sh - starts the Docker container with Jenkins server for the first time
+- ./jenkins_restart_docker.sh - restarts the already created Docker container with Jenkins server
+- ./jenkins_stop_docker.sh - stops the already running Docker container with Jenins server
+- ./jenkins_remove_docker.sh - removes the created Docker container with Jenins server and its Docker image
+
 ## 1. Jenkins Plugins Installation <a name="jenkins-plugins-installation"></a>
 
 - In this codebase, you find plugins.txt. This text file contains all the additional plugins you like to automatically installed when the Docker based Jenkins Server is "up & running" for the first time
 
 - In Dockerfile, you find above plugins.txt file is read and Jenkins Install Plugins command line tool is executed during this codegase Jenkins's Docker container image creation
 
-## 2, Jenkins Docker Image Creation <a name="jenkins-docker-image-creation"></a>
+## 2. Jenkins Docker Image Creation <a name="jenkins-docker-image-creation"></a>
 
 Execute below commands to create the Jenkins Docker image with this codebase additional Jenkins configuration and default Jenkins Seed Project creation.
 
