@@ -10,8 +10,33 @@ You can access this Jenkins Server (after Docker container running) at http://lo
 
 - In Dockerfile, you find above plugins.txt file is read and Jenkins Install Plugins command line tool is executed during this codegase Jenkins's Docker container image creation
 
+## Jenkins Docker Image Creation
+
+Execute below commands to create the Jenkins Docker image with this codebase additional Jenkins configuration and default Jenkins Seed Project creation.
+
+```sh
+
+# Assuming you are in the root folder of this Github project codebase i.e. CreditRiskApp folder
+
+cd devops/cicd/jenkins-server
+
+# Note: Below remove bash script might give error if you are running for the first time. This error because of non-availability of this codebase specific Jenkins Docker container or Docker Image
+./jenkins_remove_docker.sh 
+
+# Command to create this codebase specific Jenkins Docker Image with default Seed Project creation
+./jenkins_build_docker.sh
+
+# After executing below "run" script, you see a log "hudson.WebAppMain$3#run: Jenkins is fully up and running"
+./jenkins_run_docker.sh
+
+# Now open browser and access the Jenkins Server at http://localhost:8080
+
+
+```
 
 ![This codebase Jenkins Docker Image Creation](../../../docs/assets/images/jenkins_server_docker_build.png)
+
+![This codebase Jenkins Up and Running](../../../docs/assets/images/Jenkins_Up_Running.png)
 
 
 ## Seed Job Jenkins Project
