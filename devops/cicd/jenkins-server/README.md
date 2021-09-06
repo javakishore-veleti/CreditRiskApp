@@ -31,6 +31,11 @@ cd devops/cicd/jenkins-server
 
 # Now open browser and access the Jenkins Server at http://localhost:8080
 
+# To stop the Jenkins docker container
+./jenkins_stop_docker.sh
+
+# To remove the Jenkins docker container and also Jenkins Docker image
+./jenkins_remove_docker.sh
 
 ```
 
