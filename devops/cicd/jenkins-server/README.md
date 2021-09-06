@@ -34,10 +34,13 @@ cd devops/cicd/jenkins-server
 
 ```
 
+Figure for Jenkins Docker Image build creation.
 ![This codebase Jenkins Docker Image Creation](../../../docs/assets/images/jenkins_server_docker_build.png)
 
+Figure for Jenkins Docker Container running for the first time.
 ![This codebase Jenkins Up and Running](../../../docs/assets/images/Jenkins_Up_Running.png)
 
+Figure for Jenkins Docker Container home page when accessed in browser http://localhost:8080
 ![This codebase Jenkins Home page first time](../../../docs/assets/images/Jenkins_HomePage_FirstTime.png)
 
 
