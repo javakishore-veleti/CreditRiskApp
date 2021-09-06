@@ -12,7 +12,6 @@ You can access this Jenkins Server (after Docker container running) at http://lo
 2. [Jenkins Docker Image Creation](#jenkins-docker-image-creation)
 3. [Seed Job Jenkins Project](#seed-job-jenkins-project)
 4. [Maven Projects creation](#maven-projects-creation)
-5. [Jenkins Server Docker Container](#jenkins-server-docker-container)
 
 
 ## 1. Jenkins Plugins Installation <a name="jenkins-plugins-installation"></a>
