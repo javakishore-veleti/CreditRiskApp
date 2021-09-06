@@ -69,6 +69,9 @@ Figure for Jenkins Docker Container running first time. Watch message "hudson.We
 Figure for Jenkins Docker Container home page when accessed in browser http://localhost:8080
 ![This codebase Jenkins Home page first time](../../../docs/assets/images/Jenkins_HomePage_FirstTime.png)
 
+Figure for Jenkins "seed job" project and its "Build Now" icon
+![Jenkins Seed Job project](../../../docs/assets/images/Jenkins-seed-job-jenkins-project-build-now-button.png)
+
 
 ## 4. Seed Job Jenkins Project
 
