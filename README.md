@@ -10,13 +10,18 @@ But the with primary focus of this project is more on technology than on Credit 
 - Cloud services like AWS, GCP, Azure and more.
 - Angular, React, JWT
 
-# Multiple MicroServices Projects setup
+# Table of contents
+1. [Multiple MicroServices Projects setup](#multiple-microservices-projects-setup)
+2. [Tools Versions](#tools-versions)
+3. [Maven Projects creation](#maven-projects-creation)
+
+# Multiple MicroServices Projects setup <a name="multiple-microservices-projects-setup"></a>
 This codebase have following Microservices
 - creditrisk-advisory-service
 - creditrisk-creditsearch-service
 - creditrisk-modeling-service
 
-## Tools Versions
+## Tools Versions <a name="tools-versions"></a>
 Following tools and versions are used to create and maintain this codebase:
 
 | Tool Name        	| Version           | Commands           	| Additional Notes   							|
@@ -28,7 +33,7 @@ Following tools and versions are used to create and maintain this codebase:
 | Jenkins Server   	| 2.249.1  		   	| 						|  					 							|
 | Docker   		   	| 	     		   	| 						|  					 							|
 
-## Maven Projects creation
+## Maven Projects creation <a name="maven-projects-creation"></a>
 - Created Eclipse Working Set for each of the Microservice
 - Using Eclipse -> New Project -> Maven -> maven-archetype-quickstart, created all MicroServices Java projects
 
