@@ -31,7 +31,6 @@ Following tools and versions are used to create and maintain this codebase:
 ## Maven Projects creation
 - Created Eclipse Working Set for each of the Microservice
 - Using Eclipse -> New Project -> Maven -> maven-archetype-quickstart, created all MicroServices Java projects
-![This codebase Maven workingsets](./docs/assets/images/eclipse_working_sets_maven_projects.png)
 
 ## Maven Wrapper (mvnw) commands
 Below mvnw (Maven Wrapper) commands are executed only after the above MicroServices Maven projects created.
@@ -53,6 +52,8 @@ Below mvnw (Maven Wrapper) commands are executed only after the above MicroServi
 	mvn -N io.takari:maven:wrapper	
 
 ```
+
+![This codebase Maven workingsets](./docs/assets/images/eclipse_working_sets_maven_projects.png)
 
 
 # Jenkins Server Docker Container codebase
