@@ -8,13 +8,14 @@ You can access this Jenkins Server (after Docker container running) at http://lo
 > In summary, after following below mentioned steps, you will have a CI/CD pipeline Jenkins project being created automatically. This automatically created Jenkins project uses this codebase GitHub URL as SCM URL and builds the CI/CD stages for this codebase.
 
 # Table of contents
-1. [Jenkins Plugins Installation](#jenkins-plugins-installation)
-2. [Jenkins Docker Image Creation](#jenkins-docker-image-creation)
-3. [Seed Job Jenkins Project](#seed-job-jenkins-project)
-4. [Maven Projects creation](#maven-projects-creation)
+1. [Jenkins Docker Container build/start/stop/restart/remove scripts](#jenkins-docker-container)
+2. [Jenkins Plugins Installation](#jenkins-plugins-installation)
+3. [Jenkins Docker Image Creation](#jenkins-docker-image-creation)
+4. [Seed Job Jenkins Project](#seed-job-jenkins-project)
+5. [Maven Projects creation](#maven-projects-creation)
 
 
-## 1. Jenkins Docker Container build/start/stop/restart/remove scripts
+## 1. Jenkins Docker Container build/start/stop/restart/remove scripts <a name="jenkins-docker-container"></a>
 
 Following are the bash scripts you will find in this codebase to build/start/stop/restart/remove the Docker container based Jenkins server
 
@@ -24,13 +25,13 @@ Following are the bash scripts you will find in this codebase to build/start/sto
 - ./jenkins_stop_docker.sh - stops the already running Docker container with Jenins server
 - ./jenkins_remove_docker.sh - removes the created Docker container with Jenins server and its Docker image
 
-## 1. Jenkins Plugins Installation <a name="jenkins-plugins-installation"></a>
+## 2. Jenkins Plugins Installation <a name="jenkins-plugins-installation"></a>
 
 - In this codebase, you find plugins.txt. This text file contains all the additional plugins you like to automatically installed when the Docker based Jenkins Server is "up & running" for the first time
 
 - In Dockerfile, you find above plugins.txt file is read and Jenkins Install Plugins command line tool is executed during this codegase Jenkins's Docker container image creation
 
-## 2. Jenkins Docker Image Creation <a name="jenkins-docker-image-creation"></a>
+## 3. Jenkins Docker Image Creation <a name="jenkins-docker-image-creation"></a>
 
 Execute below commands to create the Jenkins Docker image with this codebase additional Jenkins configuration and default Jenkins Seed Project creation.
 
@@ -69,7 +70,7 @@ Figure for Jenkins Docker Container home page when accessed in browser http://lo
 ![This codebase Jenkins Home page first time](../../../docs/assets/images/Jenkins_HomePage_FirstTime.png)
 
 
-## 3. Seed Job Jenkins Project
+## 4. Seed Job Jenkins Project
 
 - In this codebase, you find seedJob.xml. This is "seed-job" Jenkins project's XML configuration, in Jenkins XML syntax. This "seed-job" is a default Jenkins Project that is available when you run the Jenkins server using the shell scripts of this codebase.
 
@@ -84,7 +85,7 @@ Figure for Jenkins Docker Container home page when accessed in browser http://lo
 - Through the above approach, we can automatically setup all the Jenkins project stages for this CreditRiskApp codebase.
 
 
-## 4. About createJobs.groovy
+## 5. About createJobs.groovy
 
 - In seedJob.xml you can find "hudson.plugins.git.GitSCM" configured to this codebase Github URL.
 
