@@ -10,6 +10,7 @@ The purpose of this project is to adapt MicroServices to Credit Risk domain. Thi
 
 # Project Primary Focus <a name="project-primary-focus"></a>
 The primary focus of this project is more on technology than on Credit Risk domain. So, the technology focused aspects in this codebase are:
+
 - MicroServices design patterns
 - Java 8 Streams / Functional Programming
 - Kafka streaming architecture
@@ -39,8 +40,11 @@ Following tools and versions are used to create and maintain this codebase:
 | H2 Database Server 	| 1.4.200	     	| 						|  					 							|
 
 ## Maven Projects creation <a name="maven-projects-creation"></a>
+
 - Created Eclipse Working Set for each of the Microservice
+
 - Using Eclipse -> New Project -> Maven -> maven-archetype-quickstart, created all MicroServices Java projects
+
 - After creating Maven projects, for each Microservice src/main/resources/application.properties files are created manually
 
 #### Maven Wrapper (mvnw) commands
@@ -71,7 +75,9 @@ Below mvnw (Maven Wrapper) commands are executed only after the above MicroServi
 In this codebase, a Docker container based Jenkins server is used.
 
 ## Automatic CreditRiskApp Jenkins Project setup
+
 - Once Docker container based Jenkins server bash/shell scripts (in subfolders of this codebase - ./devops/cicd/jenkins-server) are executed, then you can accesss Jenkins server at http://localhost:8080
+
 - Read more about Jenkins Server Job DSL feature usage for this codebase in README.md file at ./devops/cicd/jenkins-server/README.md
 
 
