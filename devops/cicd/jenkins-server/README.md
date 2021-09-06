@@ -4,7 +4,7 @@ A Docker container based Jenkins Server with pre-configured "SeedJob" Jenkins pr
 
 You can access this Jenkins Server (after Docker container running) at http://localhost:8080
 
-> In summary, after following below mentioned steps, you will have a CI/CD pipeline Jenkins project being created automatically. This Jenkins project uses this codebase GitHub URL as SCM URL and builds the CI/CD stages for this codebase.
+> In summary, after following below mentioned steps, you will have a CI/CD pipeline Jenkins project being created automatically. This automatically created Jenkins project uses this codebase GitHub URL as SCM URL and builds the CI/CD stages for this codebase.
 
 # Table of contents
 1. [Jenkins Plugins Installation](#jenkins-plugins-installation)
