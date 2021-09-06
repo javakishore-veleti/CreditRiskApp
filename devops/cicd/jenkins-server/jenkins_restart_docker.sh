@@ -1,0 +1,1 @@
+docker restart creditrisk-devops-jenkins-server
