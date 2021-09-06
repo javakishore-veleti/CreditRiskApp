@@ -72,6 +72,7 @@ In this codebase, a Docker container based Jenkins server is used.
 
 ## Automatic CreditRiskApp Jenkins Project setup
 - Once Docker container based Jenkins server bash/shell scripts (in subfolders of this codebase - ./devops/cicd/jenkins-server) are executed, then you can accesss Jenkins server at http://localhost:8080
+- Read more about Jenkins Server Job DSL feature usage for this codebase in README.md file at ./devops/cicd/jenkins-server/README.md
 
 
 
