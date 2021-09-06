@@ -4,6 +4,11 @@ A Docker container based Jenkins Server with pre-configured "SeedJob" Jenkins pr
 
 You can access this Jenkins Server (after Docker container running) at http://localhost:8080
 
+## Jenkins Plugins Installation
+
+- In this codebase, you find plugins.txt. This text file contains all the additional plugins you like to automatically installed when the Docker based Jenkins Server is "up & running" for the first time
+- In Dockerfile, you find above plugins.txt file is read and Jenkins Install Plugins command line tool is executed during this codegase Jenkins's Docker container image creation
+
 ## Seed Job Jenkins Project
 
 - In this codebase, you find seedJob.xml. This is an XML configuration for a Jenkins Project, with name "seed-job"
