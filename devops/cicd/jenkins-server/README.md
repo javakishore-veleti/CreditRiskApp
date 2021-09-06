@@ -37,7 +37,7 @@ cd devops/cicd/jenkins-server
 Figure for Jenkins Docker Image build creation.
 ![This codebase Jenkins Docker Image Creation](../../../docs/assets/images/jenkins_server_docker_build.png)
 
-Figure for Jenkins Docker Container running for the first time.
+Figure for Jenkins Docker Container running for the first time. Watch message "hudson.WebAppMain$3#run: Jenkins is fully up and running".
 ![This codebase Jenkins Up and Running](../../../docs/assets/images/Jenkins_Up_Running.png)
 
 Figure for Jenkins Docker Container home page when accessed in browser http://localhost:8080
