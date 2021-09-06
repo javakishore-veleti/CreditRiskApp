@@ -71,7 +71,7 @@ Below mvnw (Maven Wrapper) commands are executed only after the above MicroServi
 In this codebase, a Docker container based Jenkins server is used.
 
 ## Automatic CreditRiskApp Jenkins Project setup
-- Once Docker container based Jenkins server bash/shell scripts (in subfolders of this codebase) are executed, then you can accesss Jenkins server at http://localhost:8080
+- Once Docker container based Jenkins server bash/shell scripts (in subfolders of this codebase - ./devops/cicd/jenkins-server) are executed, then you can accesss Jenkins server at http://localhost:8080
 
 
 
