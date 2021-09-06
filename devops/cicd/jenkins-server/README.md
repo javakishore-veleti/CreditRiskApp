@@ -38,7 +38,7 @@ Following are the bash scripts you will find in this codebase to build/start/sto
 ![Jenkins Seed Job project](../../../docs/assets/images/Jenkins-seed-job-jenkins-project-build-now-button.png)
 
 #### Figure for Jenkins "seed job" project "Build Now" successful, 2 new Jenkins projects created
-![Jenkins Seed Job Build](../../../docs/assets/images/Jenkins-seedjob-buildnow-successful-2-new-projects.png)
+![Seed Job Build Now](../../../docs/assets/images/Jenkins-seedjob-buildnow-successful-2-new-projects-1.png)
 
 
 ## 2. Jenkins Plugins Installation <a name="jenkins-plugins-installation"></a>
